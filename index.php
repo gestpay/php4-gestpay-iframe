@@ -322,7 +322,7 @@ if(BrowserEnabled){
 				<div id="EmailField">
 					<label for="Email">Buyer Email</label>
 					<div class="fieldcontainerL">
-						<input type="email" name="Email" id="Email" value="">
+						<input type="email" id="Email" value="">
 					</div>
 				</div>
 			</div>
