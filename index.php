@@ -7,8 +7,7 @@ $shopLogin = $_REQUEST["ShopLogin"];
 
 //Setting up the basic parameter set to retrieve an encrypted string form GestPay
 $shopLogin = ''; //YOUR SHOP LOGIN Eg. production code '9000001' , test code 'gespay0001' 
-// test or production environment? 
-$testEnv = true;
+$testEnv = true; // test or production environment? 
 
 //if $PARes is not empty, we are coming back after 3D security check
 if (strlen($PARes) > 0){
