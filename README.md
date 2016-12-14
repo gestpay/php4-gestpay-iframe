@@ -4,7 +4,7 @@ This example focuses on how to completely customize the payment page the way you
 
 A detailed explanation of what's going on is in the [Getting Started](http://docs.gestpay.it/gs/super-quick-start-guide.html) page. Refer to the paragraph *Using your customized payment page* to understand the process of paying with this solution. 
 
-> **NOTE - to launch this example, the iFrame solution must be active on your environment. Ask Gestpay customer care to enable this** 
+> **NOTE - to launch this example, the iFrame solution must be active on your environment. Ask Gestpay support to enable it** 
 
 ## What's in this repository 
 
@@ -18,18 +18,17 @@ A detailed explanation of what's going on is in the [Getting Started](http://doc
 
 ## How to start 
 
-1. open `index.php` and set the `$shopLogin` variable (row 9) with your Gestpay shop login. 
-2. in the same file, you can set the environment (*test* or *production*) via the variable `$testEnv`. (Default: `true`)
-3. upload it to a php server with a public ip 
-4. Connect to your [test merchant back-office](http://testecomm.sella.it) and log in 
-5. In *Configuration* > *IP address*, insert the public IP of your server 
-6. In the same page click on *Response Address* and insert:
+1. open `index.php` and set the `$shopLogin` variable (row 9) with your Gestpay shop login. In the same file, you can set the environment (*test* or *production*) via the variable `$testEnv`. (Default: `true`)   
+2. upload it to a php server with a public ip 
+3. Connect to your [test merchant back-office](http://testecomm.sella.it) and log in 
+4. In *Configuration* > *IP address*, insert the public IP of your server 
+5. In the same page click on *Response Address* and insert:
 	- URL for positive response: `<<your_server_address>>/response.php`
 	- URL for negative response: `<<your_server_address>>/response.php`
 	- URL Server to Server: `<<your_server_address>>/response.php` 
-7. Pay with one of the cards present in *Notification* page.
-8. Once you have payed, you'll be redirected by Gestpay on `response.php` to see the outcome ot the transaction.  
+6. Pay with one of the cards present in *Notification* page.
+7. Once you have payed, you'll be redirected by Gestpay to `response.php` to see the outcome ot the transaction.  
 
 ## Questions, Issues, etc.
 
-For any questions, open an issue on Github.
+For any questions, open an issue here on Github.
