@@ -286,25 +286,52 @@ if(BrowserEnabled){
   <!-- Credit card form -->
   <form name="CCForm" method="post" id="CCForm" OnSubmit="return CheckCC();" class="Off">
     <div id="Fields">
-    <fieldset id="CCFieldset">
-    <legend>Credit card data</legend>
-      <div id="CCcontainer">
-      <div id="CCField"><label for="CC">Card Number</label><div class="fieldcontainerL"><input type="text" name="CC" id="CC" autocomplete="off" maxlength="19" placeholder="4444444444444444"/></div></div>
-      <div id="ExpDate"><label>Exipiry Date (MM/YY)</label><div class="fieldcontainerS"><input type="text" name="EXPMM" id="EXPMM" autocomplete="off" maxlength="2" placeholder="01" /></div> / <div class="fieldcontainerS"><input type="text" name="EXPYY" id="EXPYY" autocomplete="off" maxlength="2"  placeholder="18"/></div>
-      </div>
-      <hr/>
-      <div id="CCVField"><label>Security code (Cvv2/4DBC)</label><div class="fieldcontainerS"><input type="password" name="CVV2" id="CVV2" maxlength="4" /></div></div>
-      <hr />
-      <div id="NameField"><label for="Name">Buyer Name</label><div class="fieldcontainerL"><input type="text" name="Name" id="Name" value=""></div></div>
-      <hr />
-      <div id="EmailField"><label for="Email">Buyer Email</label><div class="fieldcontainerL"><input type="email" name="Email" id="Email" value=""></div></div>
-      </div>
-    </fieldset>
-    <fieldset id="SubmitFieldset">	
-      <input type="submit" value="Proceed" id="submit" />
-    </fieldset>
-    </div>
-  </form>
+			<fieldset id="CCFieldset">
+			<legend>Credit card data</legend>
+			<div id="CCcontainer">
+				<div id="CCField">
+					<label for="CC">Card Number</label>
+						<div class="fieldcontainerL">
+							<input type="text" id="CC" autocomplete="off" maxlength="19" placeholder="4444444444444444"/>
+						</div>
+				</div>
+				<div id="ExpDate">
+					<label>Exipiry Date (MM/YY)</label>
+						<div class="fieldcontainerS">
+							<input type="text" id="EXPMM" autocomplete="off" maxlength="2" placeholder="01" />
+						</div> / 
+						<div class="fieldcontainerS">
+							<input type="text" id="EXPYY" autocomplete="off" maxlength="2"  placeholder="18"/>
+						</div>
+				</div>
+				<hr/>
+				<div id="CCVField">
+					<label>Security code (Cvv2/4DBC)</label>
+					<div class="fieldcontainerS">
+						<input type="password" id="CVV2" maxlength="4" />
+					</div>
+				</div>
+				<hr />
+				<div id="NameField">
+					<label for="Name">Buyer Name</label>
+					<div class="fieldcontainerL">
+						<input type="text" id="Name" value="">
+					</div>
+				</div>
+				<hr />
+				<div id="EmailField">
+					<label for="Email">Buyer Email</label>
+					<div class="fieldcontainerL">
+						<input type="email" name="Email" id="Email" value="">
+					</div>
+				</div>
+			</div>
+			</fieldset>
+			<fieldset id="SubmitFieldset">	
+				<input type="submit" value="Proceed" id="submit" />
+			</fieldset>
+		</div>
+	</form>
 </div>
 
 </body>
